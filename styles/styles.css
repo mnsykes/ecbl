@@ -1,0 +1,360 @@
+/* Global Styles */
+
+html {
+	font-size: 10px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: visible;
+	font-family: "Sintony", sans-serif;
+}
+
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #004d98;
+}
+
+/* INDEX STYLES */
+
+/* Page title and Logo */
+.logoArea {
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	margin-top: 1.7rem;
+	height: 9rem;
+}
+
+.logoText {
+	font-size: 9rem;
+	text-align: center;
+	letter-spacing: 2.3rem;
+}
+
+/* Header and Nav styles */
+header {
+	height: auto;
+}
+
+#navBar {
+	margin: 2rem 6rem;
+	background: rgb(167, 30, 46);
+	padding: 1.5rem 4rem;
+}
+
+#navBar ul {
+	list-style: none;
+}
+
+#navBar ul li {
+	display: inline;
+}
+
+#navBar ul li a {
+	display: inline-block;
+	font-size: 2rem;
+	text-decoration: none;
+	padding-right: 4rem;
+	color: whitesmoke;
+	font-weight: bold;
+}
+
+#navBar ul li a:hover {
+	transform: scale(1.1);
+}
+
+#navBar .fa {
+	font-size: 2.5rem;
+}
+
+#dropdown {
+	display: none;
+}
+
+/* Hidden Nav area for team logos
+	 accessed with jQuery toggle	 */
+.teamLogos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 0 6rem;
+	background: #f7f8f9;
+	padding: 1.5rem 0;
+}
+
+.teamLogos img {
+	height: 7.5rem;
+}
+
+/* Newsletter modal styles */
+.newsletter {
+	margin: 2rem auto;
+}
+
+.newsletter h3 {
+	font-weight: bold;
+	font-size: 2.3rem;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.newsletter p {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.contact {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	font-size: 1.6rem;
+}
+
+label.error {
+	color: red;
+	font-size: 1rem;
+}
+
+input.error {
+	border: 0.2rem solid red;
+}
+
+.choose {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1rem;
+}
+
+.choose button {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	/* opacity: 0.7; */
+	margin-bottom: 2rem;
+}
+
+.teamNews {
+	opacity: 0.7;
+}
+
+.toggle {
+	opacity: 1;
+}
+
+.choose img {
+	height: 4rem;
+}
+
+.btnNewsletter {
+	display: block;
+}
+
+.btnNewsletter button {
+	font-size: 2rem;
+	width: 100%;
+	padding: 2rem 0;
+	cursor: pointer;
+}
+
+.btnNewsletter button:hover {
+	font-weight: bold;
+}
+
+#main {
+	height: 120rem;
+	margin: 0 6rem;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 10rem);
+	background: #f7f8f9;
+}
+
+.hero {
+	background-image: url("../assets/hero.jpg");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	grid-area: 1/1/6/10;
+}
+
+.heroText {
+	padding-top: 30rem;
+	color: whitesmoke;
+}
+
+.heroText h2 {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	font-size: 4.5rem;
+	text-decoration: underline;
+}
+
+.heroText pre {
+	position: relative;
+	top: 50%;
+	left: 27%;
+	padding-top: 1.3rem;
+	font-size: 2rem;
+}
+
+.stats {
+	background: #f7f8f9;
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 5rem;
+	grid-area: 1/10/7/13;
+}
+
+.stats caption {
+	font-size: 1.6rem;
+	text-align: left;
+	font-weight: bold;
+}
+
+.stats th {
+	padding-right: 1.5rem;
+	font-size: 1.3rem;
+	text-align: left;
+}
+
+.stats td {
+	padding-right: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.stats img {
+	height: 1.4rem;
+}
+
+.upcoming {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	grid-area: 6/1/7/10;
+	color: black;
+	background: #f7f8f9;
+}
+
+.game {
+	padding: 0.5rem;
+	border: 1px solid #333;
+	height: 4rem;
+}
+
+.game img {
+	height: 1.4rem;
+}
+
+.features {
+	grid-area: 7/1/8/10;
+	border-bottom: 1px solid #333;
+	font-size: 2.5rem;
+	padding: 2rem 0;
+	margin-bottom: 2rem;
+}
+
+#news {
+	grid-area: 8/1/11/10;
+	display: flex;
+	justify-content: space-between;
+}
+
+#news h3 {
+	font-size: 2rem;
+}
+
+#news p {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	padding: 1rem 2rem;
+	text-align: left;
+}
+
+.article {
+	height: 100%;
+	text-align: center;
+}
+
+.article img {
+	height: 20rem;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.art-1,
+.art-2,
+.art-3 {
+	width: 30%;
+}
+
+.readMore {
+	padding-top: 1.2rem;
+	font-size: 1.2rem;
+	color: #004d98;
+	text-decoration: underline;
+}
+
+.twitter {
+	grid-area: 7/10/12/13;
+	padding: 1rem 2rem;
+}
+
+footer {
+	grid-area: 12/1/13/13;
+	border-top: 1px solid #333;
+	display: flex;
+	flex-direction: row;
+}
+
+footer .fa {
+	float: right;
+	font-size: 3rem;
+	padding-top: 2rem;
+	padding-right: 4rem;
+	color: #333;
+}
+
+.footerLeague {
+	display: flex;
+	align-items: center;
+}
+.footerLogo {
+	height: 6rem;
+}
+
+.footerText {
+	padding-left: 1rem;
+	font-size: 4rem;
+	text-align: center;
+	letter-spacing: 2.3rem;
+}
+
+.corpInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25rem;
+	font-size: 1.3rem;
+	line-height: 2.2rem;
+}
