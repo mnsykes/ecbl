@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/c864577d8c.js" crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sintony&display=swap"
+			rel="stylesheet"
+			title="font"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+			title="font"
+		/>
+		<link rel="stylesheet" href="styles/jquery-ui.min.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="icon" href="assets/cl-logo.png" type="image/gif" sizes="16x16" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.13/dist/shoelace/shoelace.css"
+		/>
+		<script src="scripts/jquery-1.11.0.min.js"></script>
+		<script src="scripts/jquery-ui.min.js"></script>
+		<script src="scripts/jquery.validate.min.js"></script>
+		<script src="scripts/main.js"></script>
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.13/dist/shoelace/shoelace.esm.js"
+		></script>
+		<title>ECBL | Homepage</title>
+	</head>
+	<body>
+		<header>
+			<div class="logoArea">
+				<img class="logo" src="assets/cl-logo.png" alt="ECBL Logo" />
+				<h2 class="logoText">ECBL</h2>
+			</div>
+			<div id="navBar">
+				<ul>
+					<li><a href="#" class="logoDrop" title="Teams">Teams</a></li>
+					<li><a href="#news" title="News">News</a></li>
+					<li><a href="#" class="modalLink" title="Subscribe">Subscribe</a></li>
+				</ul>
+			</div>
+			<div class="teamLogos">
+				<a href="#">
+					<img
+						class="team"
+						src="assets/cl-pilots.png"
+						alt="Atlanta Pilots Logo"
+						title="Atlanta Pilots"
+					/>
+				</a>
+				<a href="#">
+					<img
+						class="team"
+						src="assets/cl-cannons.png"
+						alt="Baltimore Cannons Logo"
+						title="Baltimore Cannons"
+					/>
+				</a>
+				<a href="#">
+					<img
+						class="team"
+						src="assets/cl-kings.png"
+						alt="Brooklyn Kings Logo"
+						title="Brooklyn Kings"
+					/>
+				</a>
+				<a href="#">
+					<img
+						class="team"
+						src="assets/cl-buckeyes.png"
+						alt="Columbus Buckeyes Logo"
+						title="Columbus Buckeyes"
+					/>
+				</a>
+				<a href="#">
+					<img
+						class="team"
+						src="assets/cl-lions.png"
+						alt="Hartford Lions Logo"
+						title="Hartford Lions"
+					/>
+				</a>
+				<a href="#">
+					<img
+						class="team"
+						src="assets/cl-brewers.png"
+						alt="Philadelphia Brewers Logo"
+						title="Philadelphia Brewers"
+					/>
+				</a>
+				<a href="roosters.html">
+					<img
+						class="team"
+						src="assets/cl-roosters.png"
+						alt="Providence Roosters Logo"
+						title="Providence Roosters"
+					/>
+				</a>
+				<a href="#">
+					<img
+						class="team"
+						src="assets/cl-generals.png"
+						alt="Washington Generals Logo"
+						title="Washington Generals"
+					/>
+				</a>
+			</div>
+			<div class="subscribe">
+				<form class="newsletter">
+					<h3>Subscribe to the ECBL Newsletter</h3>
+					<p>
+						To receive weekly news and updates from around the league please enter your information
+						in the form below.
+					</p>
+					<div class="contact">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" />
+						<label for="email" title="Enter your email" class="email">Enter your email</label>
+						<input type="email" id="email" name="email" />
+					</div>
+					<h3>Choose any other additional teams you would like to hear from (optional):</h3>
+					<div class="choose">
+						<button class="teamNews" type="button">
+							<img src="assets/cl-pilots.png" alt="Atlanta Pilots Logo" class="teamNewsBtn" />
+						</button>
+						<button class="teamNews" type="button" class="teamNewsBtn">
+							<img src="assets/cl-cannons.png" alt="Baltimore Cannons Logo" />
+						</button>
+						<button class="teamNews" type="button" class="teamNewsBtn">
+							<img src="assets/cl-kings.png" alt="Brooklyn Kings Logo" />
+						</button>
+						<button class="teamNews" type="button">
+							<img src="assets/cl-buckeyes.png" alt="Columbus Buckeyes Logo" />
+						</button>
+						<button class="teamNews" type="button">
+							<img src="assets/cl-lions.png" alt="Hartford Lions Logo" />
+						</button>
+						<button class="teamNews" type="button">
+							<img src="assets/cl-brewers.png" alt="Philadelphia Brewers Logo" />
+						</button>
+						<button class="teamNews" type="button">
+							<img src="assets/cl-roosters.png" alt="Providence Roosters Logo" />
+						</button>
+						<button class="teamNews" type="button">
+							<img src="assets/cl-generals.png" alt="Washington Generals Logo" />
+						</button>
+					</div>
+					<div class="btnNewsletter">
+						<button type="submit" name="submit" id="submit" value="Submit">Subscribe</button>
+					</div>
+				</form>
+			</div>
+		</header>
+		<section id="main">
+			<div class="hero">
+				<div class="heroText">
+					<h2>Countdown to Tip-Off</h2>
+					<pre>
+						The ECBL is excited to announce that teams 
+						will be returning to action on July 31st!
+					</pre
+					>
+				</div>
+			</div>
+			<aside class="stats">
+				<div class="standings">
+					<table class="standingsTable">
+						<caption>
+							Standings
+						</caption>
+						<tr>
+							<th>Team</th>
+							<th>W</th>
+							<th>L</th>
+							<th>GB</th>
+						</tr>
+						<tr>
+							<td><a href="roosters.html" title="Providence Roosters">Providence Roosters</a></td>
+							<td>53</td>
+							<td>12</td>
+							<td>0.0</td>
+						</tr>
+						<tr>
+							<td><a href="#" title="Hartford Lions">Hartford Lions</a></td>
+							<td>46</td>
+							<td>18</td>
+							<td>6.5</td>
+						</tr>
+						<tr>
+							<td><a href="#" title="Baltimore Cannons">Baltimore Cannons</a></td>
+							<td>43</td>
+							<td>21</td>
+							<td>9.5</td>
+						</tr>
+						<tr>
+							<td><a href="#" title="Columbus Buckeyes">Columbus Buckeyes</a></td>
+							<td>41</td>
+							<td>24</td>
+							<td>12.0</td>
+						</tr>
+						<tr>
+							<td><a href="#" title="Philadelphia Brewers">Philadelphia Brewers</a></td>
+							<td>39</td>
+							<td>26</td>
+							<td>14.0</td>
+						</tr>
+						<tr>
+							<td><a href="#" title="Brooklyn Kings">Brooklyn Kings</a></td>
+							<td>39</td>
+							<td>26</td>
+							<td>14.0</td>
+						</tr>
+						<tr>
+							<td><a href="#" title="Washington Generals">Washington Generals</a></td>
+							<td>30</td>
+							<td>35</td>
+							<td>23.0</td>
+						</tr>
+						<tr>
+							<td><a href="#" title="Atlanta Pilots">Atlanta Pilots</a></td>
+							<td>30</td>
+							<td>35</td>
+							<td>23.0</td>
+						</tr>
+					</table>
+				</div>
+				<div class="points">
+					<table class="pointsTable">
+						<caption>
+							Points Per Game
+						</caption>
+						<tr>
+							<th>Team</th>
+							<th>Player</th>
+							<th>PPG</th>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-brewers.png"
+									alt="Philadelphia Brewers Logo"
+									title="Philadelphia Brewers"
+								/>
+							</td>
+							<td><a href="#">Saddiq Bey</a></td>
+							<td>16.9</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-buckeyes.png"
+									alt="Columbus Buckeyes Logo"
+									title="Columbus Buckeyes"
+								/>
+							</td>
+							<td><a href="#">Quincy McKnight</a></td>
+							<td>16.1</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-cannons.png"
+									alt="Baltimore Cannons Logo"
+									title="Baltimore Cannons"
+								/>
+							</td>
+							<td><a href="#">Bryce Nze</a></td>
+							<td>13.6</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-generals.png"
+									alt="Washington Generals Logo"
+									title="Washington Generals"
+								/>
+							</td>
+							<td><a href="#">Brendan Bailey</a></td>
+							<td>11.9</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/cl-lions.png" alt="Hartford Lions Logo" title="Brooklyn Kings" />
+							</td>
+							<td><a href="#">Julian Champagnie</a></td>
+							<td>9.8</td>
+						</tr>
+					</table>
+				</div>
+				<div class="assists">
+					<table class="assistsTable">
+						<caption>
+							Assists Per Game
+						</caption>
+						<tr>
+							<th>Team</th>
+							<th>Player</th>
+							<th>APG</th>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/cl-lions.png" alt="Hartford Lions Logo" title="Hartford Lions" />
+							</td>
+							<td><a href="#">Julian Champagnie</a></td>
+							<td>6.4</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/cl-pilots.png" alt="Atlanta Pilots Logo" title="Atlanta Pilots" />
+							</td>
+							<td><a href="#">Mac McClung</a></td>
+							<td>5.8</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-brewers.png"
+									alt="Philadelphia Brewers Logo"
+									title="Philadelphia Brewers"
+								/>
+							</td>
+							<td><a href="#">Jermaine Samuels</a></td>
+							<td>5.5</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-roosters.png"
+									alt="Providence Roosters Logo"
+									title="Providence Roosters"
+								/>
+							</td>
+							<td><a href="pvdroster.html">Maliek White</a></td>
+							<td>5.3</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-buckeyes.png"
+									alt="Columbus Buckeyes Logo"
+									title="Columbus Buckeyes"
+								/>
+							</td>
+							<td><a href="#">Myles Cale</a></td>
+							<td>5.3</td>
+						</tr>
+					</table>
+				</div>
+				<div class="rebounds">
+					<table class="reboundTable">
+						<caption>
+							Rebounds Per Game
+						</caption>
+						<tr>
+							<th>Team</th>
+							<th>Player</th>
+							<th>RPG</th>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-roosters.png"
+									alt="Providence Roosters Logo"
+									title="Providence Roosters"
+								/>
+							</td>
+							<td><a href="pvdroster.html">Alpha Diallo</a></td>
+							<td>7.8</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-roosters.png"
+									alt="Providence Roosters Logo"
+									title="Columbus Buckeyes"
+								/>
+							</td>
+							<td><a href="pvdroster.html">Nate Watson</a></td>
+							<td>5.8</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/cl-lions.png" alt="Hartford Lions Logo" title="Hartford Lions" />
+							</td>
+							<td><a href="#">Rasheem Dunn</a></td>
+							<td>3.9</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="assets/cl-kings.png" alt="Brooklyn Kings Logo" title="Brooklyn Kings" />
+							</td>
+							<td><a href="#">Zach Freemantle</a></td>
+							<td>3.1</td>
+						</tr>
+						<tr>
+							<td>
+								<img
+									src="assets/cl-lions.png"
+									alt="Hartford Lions Logo"
+									title="Washington Generals"
+								/>
+							</td>
+							<td><a href="#">Julian Champagnie</a></td>
+							<td>3.1</td>
+						</tr>
+					</table>
+				</div>
+			</aside>
+			<div id="leagueInfo"></div>
+			<div class="upcoming">
+				<table class="game">
+					<tr>
+						<th>7/31/20</th>
+						<th>8:00pm</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-kings.png" alt="Brooklyn Kings Logo" /></td>
+						<td><a href="#">BKN</a></td>
+						<td>(39-26)</td>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-roosters.png" alt="Providence Roosters Logo" /></td>
+						<td><a href="roosters.html">PVD</a></td>
+						<td>(53-12)</td>
+					</tr>
+				</table>
+				<table class="game">
+					<tr>
+						<th>7/31/20</th>
+						<th>8:30pm</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-pilots.png" alt="Atlanta Pilots Logo" /></td>
+						<td><a href="#">ATL</a></td>
+						<td>(30-35)</td>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-generals.png" alt="Washington Generals Logo" /></td>
+						<td><a href="#">WAS</a></td>
+						<td>(30-35)</td>
+					</tr>
+				</table>
+				<table class="game">
+					<tr>
+						<th>8/1/20</th>
+						<th>7:00pm</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-lions.png" alt="Hartford Lions Logo" /></td>
+						<td><a href="#">HFD</a></td>
+						<td>(46-18)</td>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-buckeyes.png" alt="Columbus Buckeyes Logo" /></td>
+						<td><a href="#">COL</a></td>
+						<td>(41-24)</td>
+					</tr>
+				</table>
+				<table class="game">
+					<tr>
+						<th>8/1/20</th>
+						<th>9:00pm</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-cannons.png" alt="Baltimore Cannons Logo" /></td>
+						<td><a href="#">BAL</a></td>
+						<td>(43-21)</td>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-brewers.png" alt="Philadelphia Brewers Logo" /></td>
+						<td><a href="#">PHI</a></td>
+						<td>(39-26)</td>
+					</tr>
+				</table>
+				<table class="game">
+					<tr>
+						<th>8/3/20</th>
+						<th>9:00pm</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-roosters.png" alt="Providence Roosters Logo" /></td>
+						<td><a href="roosters.html">PVD</a></td>
+						<td>(53-12)</td>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-cannons.png" alt="Baltimore Cannons Logo" /></td>
+						<td><a href="#">BAL</a></td>
+						<td>(43-21)</td>
+					</tr>
+				</table>
+				<table class="game">
+					<tr>
+						<th>8/4/20</th>
+						<th>7:00pm</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-buckeyes.png" alt="Columbus Buckeyes Logo" /></td>
+						<td><a href="#">COL</a></td>
+						<td>(41-24)</td>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-pilots.png" alt="Atlanta Pilots Logo" /></td>
+						<td><a href="#">ATL</a></td>
+						<td>(30-35)</td>
+					</tr>
+				</table>
+				<table class="game">
+					<tr>
+						<th>8/4/20</th>
+						<th>9:00pm</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-kings.png" alt="Brooklyn Kings Logo" /></td>
+						<td><a href="#">BKN</a></td>
+						<td>(39-26)</td>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-lions.png" alt="Hartford Lions Logo" /></td>
+						<td><a href="#">HFD</a></td>
+						<td>(46-18)</td>
+					</tr>
+				</table>
+				<table class="game">
+					<tr>
+						<th>8/5/20</th>
+						<th>8:00pm</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-generals.png" alt="Washington Generals Logo" /></td>
+						<td><a href="#">WAS</a></td>
+						<td>(30-35)</td>
+					</tr>
+					<tr>
+						<td><img src="assets/cl-brewers.png" alt="Philadelphia Brewers Logo" /></td>
+						<td><a href="#">PHI</a></td>
+						<td>(39-26)</td>
+					</tr>
+				</table>
+			</div>
+			<div class="features">
+				<h2>Features</h2>
+			</div>
+			<div id="news">
+				<div class="article art-1">
+					<img src="assets/sbey.jpg" alt="Saddiq Bey celebrating" />
+					<h3>Buzzer Beater</h3>
+					<p>
+						<a href="#">Philadelphia's Saddiq Bey</a>
+						comes up clutch in thrilling game against the
+						<a href="#">Pilots.</a> Netting the game winner with seconds left.
+					</p>
+					<p class="readMore">Read More...</p>
+				</div>
+				<div class="article art-2">
+					<img src="assets/huddle.jpg" alt="Basketball players in a huddle" />
+					<h3>The Stretch Run</h3>
+					<p>
+						With the season coming to a close, the <a href="roosters.html">Providence Roosters</a>
+						are focused on what it takes to finish strong and prepare for the playoffs.
+					</p>
+					<p class="readMore">Read More...</p>
+				</div>
+				<div class="article art-3">
+					<img src="assets/anger.jpg" alt="Basketball coach yelling at a referee" />
+					<h3>Ejected!</h3>
+					<p>
+						<a href="#">Hartford's head coach, Joseph Jones</a>
+						gets tossed in the 3rd quarter after a heated exchange with an official after a
+						questionable call.
+					</p>
+					<p class="readMore">Read More...</p>
+				</div>
+			</div>
+			<div class="twitter">
+				<a
+					class="twitter-timeline"
+					data-width="310"
+					data-height="480"
+					href="https://twitter.com/BIGEAST?ref_src=twsrc%5Etfw"
+					>Tweets by BIGEAST</a
+				>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</section>
+		<footer>
+			<div class="footerLeague">
+				<img class="footerLogo" src="assets/cl-logo.png" alt="ECBL Logo" />
+				<h2 class="footerText">ECBL</h2>
+			</div>
+			<div class="corpInfo">
+				<p>Copyright &copy; 2020</p>
+				<p>Sykes Media Corporation, All rights reserved</p>
+			</div>
+		</footer>
+	</body>
+</html>
